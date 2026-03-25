@@ -1,11 +1,12 @@
 public class ToDo
 {
-    // Add your code here
-    public string chores = "Chores";
-    public string[] MarkAsDone = ["laundry", "dishes", "floors"];
-
-    foreach(string[] anything in MarkAsDone) {
-        chores -= anything;
+    public string[] MarkAsDone(string[] todos)
+    {
+        for (int i = 0; i < todos.Length; i++)
+        {
+            todos[i] = "done - " + todos[i];
+        }
+        return todos;
     }
 }
 
