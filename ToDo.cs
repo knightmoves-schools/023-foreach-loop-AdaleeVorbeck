@@ -2,16 +2,15 @@ public class ToDo
 {
     public string[] MarkAsDone(string[] todos)
     {
-        string[] result = new string[todos.Length];
         int i = 0;
 
         foreach (string todo in todos)
         {
-            result[i] = "done - " + todo;
+            todos[i] = "done - " + todo;
             i++;
         }
 
-        return result;
+        return todos;
     }
 }
 
