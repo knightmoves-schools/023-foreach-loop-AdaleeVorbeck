@@ -1,16 +1,19 @@
-public class ToDo
+namespace knightmoves
 {
-    public string[] MarkAsDone(string[] todos)
+    public class ToDo
     {
-        int i = 0;
-
-        foreach (string todo in todos)
+        public string[] MarkAsDone(string[] todos)
         {
-            todos[i] = "done - " + todo;
-            i++;
-        }
+            int i = 0;
 
-        return todos;
+            foreach (string todo in todos)
+            {
+                todos[i] = "done - " + todo;
+                i++;
+            }
+
+            return todos;
+        }
     }
 }
 
